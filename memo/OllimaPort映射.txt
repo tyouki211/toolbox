@@ -1,0 +1,3 @@
+netsh interface portproxy add v4tov4 listenaddress=127.0.0.1 listenport=11434 connectaddress=192.168.0.84 connectport=11434
+
+netsh advfirewall firewall add rule name="PortProxy 11434" dir=in action=allow protocol=TCP localport=11434
